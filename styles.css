@@ -8,6 +8,11 @@ input:focus {
     outline:0px !important;
     -webkit-appearance: none;
 }
+
+.btn {
+    border-radius: 0px;
+}
+
 .angular-color-picker > ._hues > ._cursor {
     left: -5px;
     width: 38px;
