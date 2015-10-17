@@ -2,12 +2,26 @@
 <head>
     <title>#15 - Color Picker</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/angular-color-picker/angular-color-picker.css">
     <link type="text/css" rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body ng-controller="colorPickerCtrl">
+    <div class="container">
+        <h1>Color Picker</h1>
+        <p class="lead">Choose and select your colors.</p>
+        <div class="row">
+            <div class="color-placeholder col-xs-12 col-sm-2">
+                <color-picker ng-model="color"></color-picker>
+                <input type="text" class="color-input text-center" ng-model="color" ng-init="color = '#ffffff'">
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="bower_components/angular-color-picker/angular-color-picker.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

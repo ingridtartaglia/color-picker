@@ -1,0 +1,14 @@
+input {
+    display: block;
+    margin-top: 2em;
+    border: 1px solid #ddd;
+}
+
+input:focus {
+    outline:0px !important;
+    -webkit-appearance: none;
+}
+.angular-color-picker > ._hues > ._cursor {
+    left: -5px;
+    width: 38px;
+}
