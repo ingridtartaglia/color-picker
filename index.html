@@ -9,12 +9,19 @@
 <body ng-controller="colorPickerCtrl">
     <div class="container">
         <h1>Color Picker</h1>
-        <p class="lead">Choose and select your colors.</p>
+        <p class="lead">Choose and select your colors above:</p>
         <div class="row">
-            <div class="color-placeholder col-xs-12 col-sm-2">
+            <div class="col-xs-12 col-sm-2">
                 <color-picker ng-model="color"></color-picker>
                 <input type="text" class="color-input text-center" ng-model="color" ng-init="color = '#ffffff'">
                 <input class="btn btn-default" type="submit" value="Save" ng-click="saveColor(color)">
+            </div>
+        </div>
+        <div class="row" ng-show="colorPicked">
+            <div class="color-placeholder col-xs-12 col-sm-2">
+                <div ng-style="myStyle={'background-color':color}" class="color-div" ng-repeat="color in newColors">
+                    <div class="color-div-name text-center">{{color}}</div>
+                </div>
             </div>
         </div>
     </div>

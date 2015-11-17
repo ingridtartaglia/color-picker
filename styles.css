@@ -17,3 +17,16 @@ input:focus {
     left: -5px;
     width: 38px;
 }
+
+.color-placeholder { margin-top: 2em; }
+
+.color-div-name {
+    background: white;
+}
+
+.color-div {
+    margin-bottom: 1em;
+    height: 100px;
+    width: 150px;
+    border: 1px solid #ddd;
+}
